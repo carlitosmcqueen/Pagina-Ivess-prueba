@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import Nav from "./components/nav/Nav";
+import Home from "./Containers/Home/Home";
+import Footer from "./components/footer/Footer"
+import FormSteps from "./Containers/FormSteps/FormSteps"
+import CustomProvider from "./components/Context/Context";
+import NotFound from "./Containers/notFound/notFound";
+
+
+
+import{
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+const App = () =>{ 
+  const currentPath = window.location.pathname;
+
+  return(
+    
+    <BrowserRouter>
+          <CustomProvider>
+          <Nav></Nav>
+          <Routes>
+            <Route path="/" element={<Home></Home>}></Route>
+            <Route path="/ingresar" element={<FormSteps></FormSteps>}></Route>
+            <Route path="*" element={<NotFound></NotFound>}></Route>
+
+          </Routes>
+          {currentPath !== '/ingresar' && <Footer />}
+          </CustomProvider>
+      </BrowserRouter>
+    
+  )
 }
 
 export default App;

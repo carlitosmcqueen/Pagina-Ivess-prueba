@@ -1,0 +1,9 @@
+.indicator {
+    display: none;
+  }
+
+  .MuiPaper-root.MuiPaper-elevation1 {
+    background-color: #ffffff00; /* Cambia este valor al color deseado */
+  }
+
+/* Estilos CSS en tu archivo CSS o en línea */

@@ -1,0 +1,19 @@
+
+
+[
+    {
+        "id":1,
+        "imagen":"https://static.wikia.nocookie.net/mamarre-estudios-espanol/images/5/54/CUVcOWP4.jpg/revision/latest/thumbnail/width/360/height/360?cb=20201009210428&path-prefix=es",
+        "title":"homero chino"
+    },
+    {
+        "id":2,
+        "imagen":"https://www.infobae.com/new-resizer/KIdZUFrR3XeVb8rZy9wxZSFy6_s=/1200x900/filters:format(webp):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2016/12/21094730/mafalda-braile-1920.jpg",
+        "title":"mafalda"
+    },
+    {
+        "id":3,
+        "imagen":"https://www.eluniversal.com.mx/resizer/Q2UBXfgC-UkDTRMvuXVrq9XsAAM=/1200x740/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/JH3SICX4MZEC3K6NIEWE6UJXME.jpg",
+        "title":"hijitus"   
+    }
+]
