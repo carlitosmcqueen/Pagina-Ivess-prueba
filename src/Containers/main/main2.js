@@ -27,13 +27,13 @@ const Main2 = () =>{
                 </Grid>
 
                 <Grid item xs={12} sm={4} pt={3} sx={{padding:"20px"}}>
-                    <PilaresIcon titulo="Practicidad" description="Descubre la elegancia de la practicidad en cada momento con nuestra solución diseñada para hacer tu vida más sencilla y eficiente" img={IconCamion}></PilaresIcon>
+                    <PilaresIcon titulo="Practicidad" description="Elegí día y hora. Evitá cargar bolsas desde el supermercado" img={IconCamion}></PilaresIcon>
                 </Grid>
                 <Grid item xs={12} sm={4} pt={3} sx={{padding:"20px"}}>
-                    <PilaresIcon titulo="Conveniencia" description="Experimenta la máxima conveniencia a tu alcance con nuestro producto. Simplifica cada día con nuestra oferta que te hace la vida más fácil" img={IconChanchito}></PilaresIcon>
+                    <PilaresIcon titulo="Conveniencia" description="Garantía de cumplimiento y servicio de tu repartidor" img={IconChanchito}></PilaresIcon>
                 </Grid>
                 <Grid item xs={12} sm={4} pt={3} sx={{padding:"20px"}}>
-                    <PilaresIcon titulo="Confianza" description="Confianza en cada detalle: Nuestro producto está respaldado por años de excelencia y satisfacción del cliente" img={IconTrabajador}></PilaresIcon>
+                    <PilaresIcon titulo="Confianza" description="Menor precio por litro y sin costo de envío." img={IconTrabajador}></PilaresIcon>
                 </Grid>
             </Grid>
              

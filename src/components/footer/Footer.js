@@ -34,7 +34,7 @@ const Footer = () =>{
           </Grid>
           <Grid item xs={6} sm={4} sx={{ borderBottom: '2px solid #6b93be', padding:"1rem"}}>
             <Typography variant="h6" color="#ffffff" gutterBottom sx={{ textAlign: 'center',fontFamily:"montserrat,sans-serif"}}>
-            <Link color="inherit" sx={{textDecoration: 'none'}}>CONTACTANOS</Link>
+            CONTACTO
             </Typography>
             <Typography variant="h6" color="#ffffff" gutterBottom>
             <Link href="#" color="inherit" sx={{textDecoration: 'none', '&:hover': { color: '#044f98' } }}>XXXX-XXXX</Link>
