@@ -11,7 +11,7 @@ const Main1 = () =>{
         <Container disableGutters>
             <Grid container >
                 <Grid item xs={12} sm={12} md={7} sx={{ display:"flex", justifyContent:"space-between", alignItems: "center",padding:{xs:"10px 10px",sm:"20px 20px", md:"50px "}}}>
-                    <Box sx={{ display:"flex",height:{xs:"auto",lg:"29vh"},justifyContent:"space-around",flexDirection:'column',alignItems:"space-between"}}>
+                    <Box sx={{ display:"flex",height:{xs:"auto",lg:"30vh"},justifyContent:"space-around",flexDirection:'column',alignItems:"space-between"}}>
                         <Box sx={{padding:"10px"}}>
                             <Box sx={{display:"flex",flexDirection:{xs:"column",sm:"row"}}}>
                             <Typography variant="h4" fontFamily='montserrat,sans-serif' fontWeight="bold" >

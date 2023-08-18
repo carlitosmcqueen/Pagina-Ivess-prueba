@@ -16,7 +16,7 @@ const SecondStep = () =>{
       };
 
     return(
-        <Box sx={{display: 'flex', flexDirection: 'column',height:"100%", width:"70%", justifyContent: 'space-around'}}>
+        <Box sx={{display: 'flex', flexDirection: 'column', width:{xs:"70",lg:"90%"}, justifyContent: 'space-around'}}>
             <Box>
                 <Typography variant="h6">
                     Su domicilio:
@@ -31,7 +31,7 @@ const SecondStep = () =>{
                 <TextField label="Departamento: Letra o N°"  inputProps={{ maxLength:5 }} value={userData["departamento"]} onChange={(e)=> setUserData({...userData,"departamento" : e.target.value})} margin="normal" variant="filled" color="primary" sx={{ width: { xs: '90%', sm: '80%' }, marginBottom: '1rem' }}></TextField>
                 <TextField label="¿Alguna aclaracion especial?" inputProps={{ maxLength:50 }} value={userData["aclaracion"]} onChange={(e)=> setUserData({...userData,"aclaracion" : e.target.value})} margin="normal" variant="filled" color="primary" sx={{ width:{ xs: '90%', sm: '80%' }, marginBottom: '1rem' }}></TextField>
             </Box>
-            <Box display="flex" width="100%" justifyContent="space-around">
+            <Box display="flex" width="100%" justifyContent="center">
                 <Button variant="contained" sx={{width:"200px"}} onClick={ ()=>setStep(1)} color="error">VOLVER</Button>
                 <Button variant="contained" sx={{width:"200px"}} onClick={ ()=>setStep(3)} color="primary">SIGUIENTE</Button>
             </Box>

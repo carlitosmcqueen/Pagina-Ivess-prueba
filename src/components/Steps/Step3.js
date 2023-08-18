@@ -7,7 +7,7 @@ const ThirdStep = () =>{
     const {setStep,userData,setUserData,submitData} = useContext(contexto)
 
     return(
-        <Box sx={{display: 'flex', flexDirection: 'column',height:"100%", width:"70%",justifyContent: 'space-around'}}>
+        <Box sx={{display: 'flex', flexDirection: 'column', width:"70%",justifyContent: 'space-around'}}>
             <Box>
                 <TextField label="productos" value={userData["productos"]} onChange={(e)=> setUserData({...userData,"productos" : e.target.value})}  margin="normal" variant="filled" color="primary" sx={{ width: { xs: '90%', sm: '80%' }, marginBottom: '1rem' }}></TextField>
                 {/* <TextField label="dato2" value={userData["dato2"]} onChange={(e)=> setUserData({...userData,"dato2" : e.target.value})} margin="normal" variant="filled" color="primary" sx={{ width: { xs: '90%', sm: '80%' }, marginBottom: '1rem' }}></TextField>

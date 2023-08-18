@@ -40,46 +40,43 @@ const Form = () =>{
         backgroundImage:`url(https://www.somoselagua.com.ar/img/bg-ivess.webp)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          width: '100%',
           height: '100vh',
         }}>
-        <Grid container align="center" boxShadow={10} sx={{
-            width: { xs: '100vw', sm: '60vw',md:"40vw"  },
-            marginTop:"10vh",
-            borderRadius: '15px',
-            backgroundColor:"#ffffff",
-            height:{xs:"109vh",sm:"70vh"},
-        }}>
-            <Grid item xs={12} sx={{
-                display:"flex",
-                alignItems:"center",
-                justifyContent:"center",
-                
+            <Grid container align="center" boxShadow={10} sx={{
+                width: { xs: '100vw', sm: '60vw',md:"40vw"  },
+                borderRadius: '15px',
+                backgroundColor:"#ffffff",
+                height:{xs:"100vh",sm:"60vh"},
             }}>
-                <Typography variant="h4"> Ingresa tus datos </Typography>
-            </Grid>
+                <Grid item xs={12} sx={{
+                    display:"flex",
+                    alignItems:{xs:"end",sm:"center"},
+                    justifyContent:"center",
+                }}>
+                    <Typography variant="h4" sx={{marginBottom:{xs:"10px",sm:"0px"}}}> Ingresa tus datos </Typography>
+                </Grid>
 
-            <Grid item xs={12} sx={{
-                padding:{xs:"10px 20px", md:"20px 30px"},
-                
-            }}>
-                <Stepper activeStep={currentStep -1 } orientation="horizontal">
-                    <Step>
-                        <StepLabel></StepLabel>
-                    </Step>
-                    <Step>
-                        <StepLabel></StepLabel>
-                    </Step>
-                    <Step>
-                        <StepLabel></StepLabel>
-                    </Step>
-                
-                </Stepper>
-                {showStep(currentStep)}
-                
+                <Grid item xs={12} sx={{
+                    padding:{xs:"0px 20px", md:"0px 30px"},
+                    
+                }}>
+                    <Stepper activeStep={currentStep -1 } orientation="horizontal">
+                        <Step>
+                            <StepLabel></StepLabel>
+                        </Step>
+                        <Step>
+                            <StepLabel></StepLabel>
+                        </Step>
+                        <Step>
+                            <StepLabel></StepLabel>
+                        </Step>
+                    
+                    </Stepper>
+                    {showStep(currentStep)}
+                    
+                </Grid>
+            
             </Grid>
-        
-        </Grid>
 
         </Box>
         

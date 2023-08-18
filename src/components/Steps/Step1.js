@@ -23,7 +23,7 @@ const FirstStep = () =>{
     }}
 
     return(
-        <Box sx={{display: 'flex', flexDirection: 'column',height:"100%", width:{xs:"70",lg:"80%"}, justifyContent:"space-around"}}>
+        <Box sx={{display: 'flex', flexDirection: 'column', width:{xs:"70",lg:"90%"}, justifyContent:"space-around"}}>
             <Box>
                 <TextField required label="Nombre" inputProps={{ maxLength:30 }} value={userData["nombre"]} onChange={handleNombreChange} margin="normal" variant="filled" color="primary" sx={{ width:{ xs: '100%', sm: '90%' }, marginBottom: '1rem' }}></TextField>
                 <TextField required label="Apellido" inputProps={{ maxLength:30 }} value={userData["apellido"]} onChange={handleApellidoChange} margin="normal" variant="filled" color="primary" sx={{ width:{ xs: '100%', sm: '90%' }, marginBottom: '1rem' }}></TextField>
@@ -34,9 +34,8 @@ const FirstStep = () =>{
                 <GoogleMaps sx={{backgroundColor:"red"}}></GoogleMaps>
             </Box>
             <Box>
-                {isNumberEntered && isNameFilled &&(
-                    <Button variant="contained" sx={{width:"200px"}} onClick={ ()=> setStep(2)} color="primary">SIGUIENTE</Button>
-                )}
+            <Button variant="contained" sx={{ width: "200px",backgroundColor: isNameFilled && isNumberEntered ? "primary" : "red", color: "white","&:hover": {backgroundColor: isNameFilled && isNumberEntered ? "primary" : "red",}, }} onClick={() => { if (isNameFilled && isNumberEntered) {setStep(2); }}}>
+                SIGUIENTE</Button>
             </Box>
         </Box>
 
