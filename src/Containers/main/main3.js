@@ -11,7 +11,7 @@ const Main3 = () =>{
             <Grid container>
                 <Grid item xs={12}>
                     <Box sx={{ padding: 3, display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                        <Typography variant="h4" fontWeight="bold" fontFamily='Segoe UI' textAlign="center">
+                        <Typography variant="h4" fontWeight="bold" fontFamily='montserrat,sans-serif' textAlign="center">
                             ¿Como funciona el servicio?
                         </Typography>
                     </Box>
