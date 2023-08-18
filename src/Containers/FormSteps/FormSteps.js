@@ -15,6 +15,8 @@ import Typography from "@mui/material/Typography";
 const Form = () =>{
 
     const {currentStep} = useContext(contexto)
+    console.log(process.env.REACT_APP_GOOGLEKEY)
+  console.log(process.env.REACT_APP_PRUEBA)
 
 
     function showStep(step) {

@@ -10,13 +10,13 @@ import {contexto} from "../../components/Context/Context"
 import parse from 'autosuggest-highlight/parse';
 import { debounce } from '@mui/material/utils';
 
-//el parse lo importe ver si da problemas 
 
 const GOOGLE_MAPS_API_KEY=process.env.REACT_APP_GOOGLEKEY
 
 
 
 function loadScript(src, position, id) {
+  
   if (!position) {
     return;
   }
