@@ -9,21 +9,23 @@ const FirstStep = () =>{
     const {setStep,userData,setUserData,isNumberEntered} = useContext(contexto)
     const isNameFilled = userData["nombre"] && userData["apellido"];
 
+
     const handleApellidoChange =(e) =>{
         const inputValue = e.target.value;
-        if(/^[A-Za-z\s]*$/.test(inputValue)){
+        
+        if(/^[^0-9]*$/.test(inputValue)){
             setUserData({...userData,"apellido":inputValue});
         }
     }
     
     const handleNombreChange = (e) => {
     const inputValue = e.target.value;
-    if (/^[A-Za-z\s]*$/.test(inputValue)) {
+    if (/^[^0-9]*$/.test(inputValue)) {
       setUserData({ ...userData, "nombre": inputValue });
     }}
 
     return(
-        <Box sx={{display: 'flex', flexDirection: 'column', width:{xs:"70",lg:"90%"}, justifyContent:"space-around"}}>
+        <Box sx={{display: 'flex', flexDirection: 'column', width:{xs:"70",lg:"90%"}, justifyContent:"space-around", padding:"2rem"}}>
             <Box>
                 <TextField required label="Nombre" inputProps={{ maxLength:30 }} value={userData["nombre"]} onChange={handleNombreChange} margin="normal" variant="filled" color="primary" sx={{ width:{ xs: '100%', sm: '90%' }, marginBottom: '1rem' }}></TextField>
                 <TextField required label="Apellido" inputProps={{ maxLength:30 }} value={userData["apellido"]} onChange={handleApellidoChange} margin="normal" variant="filled" color="primary" sx={{ width:{ xs: '100%', sm: '90%' }, marginBottom: '1rem' }}></TextField>
@@ -34,7 +36,7 @@ const FirstStep = () =>{
                 <GoogleMaps sx={{backgroundColor:"red"}}></GoogleMaps>
             </Box>
             <Box>
-            <Button variant="contained" sx={{ width: "200px",backgroundColor: isNameFilled && isNumberEntered ? "primary" : "red", color: "white","&:hover": {backgroundColor: isNameFilled && isNumberEntered ? "primary" : "red",}, }} onClick={() => { if (isNameFilled && isNumberEntered) {setStep(2); }}}>
+            <Button variant="contained" disabled={!(isNameFilled && isNumberEntered)} sx={{ width: "200px" }} onClick={() => { if (isNameFilled && isNumberEntered) {setStep(2); }}}>
                 SIGUIENTE</Button>
             </Box>
         </Box>

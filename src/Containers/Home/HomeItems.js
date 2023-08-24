@@ -4,7 +4,7 @@ function HomeItem ({item})
 {
     return (
         <Paper sx={{display:"flex", alignItems:"center", justifyContent: "center"}}>
-            <img src={item.image} alt={item.title} style={{height:"30vh", width:"30vw"}}></img>
+            <img src={item.image} alt={item.title} style={{height:"30vh", width:"27vw"}}></img>
         </Paper>
     )
 }

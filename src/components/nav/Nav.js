@@ -30,9 +30,9 @@ const Nav =()=>{
 
                         <Grid item xs={9} sm={8} sx={{order: {xs:1,sm:2}, paddingLeft:{xs:"25vw",sm:"0px"}}}>
 
-                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height:95, }}>
-                                <Link href="/" underline="none" sx={{ display: 'block', height: '100%' }}>
-                                    <img src={logoIvess} alt="Imagen" style={{ height: "100%", width: "100%" }} />
+                            <Box sx={{ display: 'flex', justifyContent:'center', alignItems: 'center', height:"95px"}}>
+                                <Link href="/" underline="none" sx={{ display: 'flex', height: '100%', justifyContent:"center", alignItems:"center"}}>
+                                    <img src={logoIvess} alt="Imagen" style={{ height: "80%", width: "80%" }} />
                                 </Link>
                             </Box>
                         </Grid>

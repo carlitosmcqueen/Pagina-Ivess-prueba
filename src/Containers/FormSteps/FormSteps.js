@@ -59,10 +59,10 @@ const Form = () =>{
                 </Grid>
 
                 <Grid item xs={12} sx={{
-                    padding:{xs:"0px 20px", md:"0px 30px"},
+                    padding:{xs:"0px 20px", md:"0px 30px"}, marginTop:"1rem"
                     
                 }}>
-                    <Stepper activeStep={currentStep -1 } orientation="horizontal">
+                    <Stepper activeStep={currentStep -1 } orientation="horizontal" sx={{padding:"0rem 1rem"}}>
                         <Step>
                             <StepLabel></StepLabel>
                         </Step>
